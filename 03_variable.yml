@@ -15,3 +15,18 @@
       msg: "this is for {{ TASKS }} and {{PLAY}}"
     vars:
       TASKS: task2   
+
+- name: prompting means taking input from the user
+  hosts: webserver
+  vars_prompt:
+  - name: USERNAME
+    prompt: "Enter your name buddy..!"
+    private: true
+  
+  - name: PASSWORD
+    prompt: "Enter password..!"
+
+  tasks:
+  - name: Displaying the data
+    ansible.builtin.debug:
+      msg: username is {{USERNAME}} and password entered is {{PASSWORD}} and it's not visible as it is private.
