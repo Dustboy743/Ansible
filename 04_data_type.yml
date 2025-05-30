@@ -7,10 +7,10 @@
     DURATION: 4
     STARTED: true
     TOOLS:
-      - Linux
-      - shell
-      - ansible
-      - terrafom
+    - Linux
+    - shell
+    - ansible
+    - terrafom
     CONCEPTS:
       CI: Jenkins
       SCRIPTING: shell, python, ansible
