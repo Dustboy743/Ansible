@@ -1,0 +1,22 @@
+---
+
+- name: Play is about data types
+  hosts: local
+  connections: local
+  vars:
+    COURSE: "DEVOPS"
+    DURATION: 4
+    STARTED: true
+    TOOLS:
+      - Linux
+      - shell
+      - ansible
+      - terrafom
+    CONCEPTS:
+      CI: Jenkins
+      SCRIPTING: shell, python, ansible
+  tasks:
+  - name: printing the data
+    ansible.builtin.debug:
+      msg: "course is {{COURSE}} duration is {{DURATION}} is started: {{STARTED}} tools are {{TOOLS}} and concepts are {{CONCEPTS}}"
+
