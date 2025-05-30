@@ -6,12 +6,12 @@
     COURSE: "DEVOPS"
     DURATION: 4
     STARTED: true
-    TOOLS: #lists
-      - Linux
-      - shell
-      - ansible
-      - terrafom
-    CONCEPTS:  #dictinaory
+    TOOLS: #lists []
+    - Linux
+    - shell
+    - ansible
+    - terrafom
+    CONCEPTS:  #dictinaory {}
       CI: Jenkins
       SCRIPTING: "shell, python, ansible"
   tasks:
