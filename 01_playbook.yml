@@ -4,4 +4,12 @@
   tasks: 
     - name: printing hello world
       ansible.builtin.debug:
-        msg: "Learning ansible"
+        msg: "Learning ansible"   #if you don't give any msg by default print "Hello world"
+
+- name: Install nginx
+  hosts: webserver
+  tasks:
+    - name: Install nginx
+      ansible.builtin.package:
+      name: ntpdate
+      state: present        
