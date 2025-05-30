@@ -21,7 +21,7 @@
   vars_prompt:
   - name: USERNAME
     prompt: "Enter your name buddy..!"
-    private: true
+    private: false
   
   - name: PASSWORD
     prompt: "Enter password..!"
