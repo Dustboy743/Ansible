@@ -16,6 +16,6 @@
       ansible.builtin.service:
         name: nginx
         state: started
-      become: true
+      become: true  #you can also give at the top instead of giving at every task
 
   
