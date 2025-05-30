@@ -1,7 +1,7 @@
 ---
 - name: Play is about data types
-  hosts: local
-  connection: local
+  hosts: localhost
+  connection: localhost
   vars:
     COURSE: "DEVOPS"
     DURATION: 4
