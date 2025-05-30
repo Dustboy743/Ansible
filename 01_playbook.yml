@@ -4,13 +4,18 @@
   tasks: 
     - name: printing hello world
       ansible.builtin.debug:
-        msg: "Learning ansible"   #if you don't give any msg by default print "Hello world"
-
-- name: Install nginx
-  hosts: webserver
-  tasks:
+        msg: "Learning ansible"   #if you don't give any msg by default print "Hello world
+        
     - name: Install nginx
       ansible.builtin.package:
        name: nginx
        state: present        
-      become: true  
+      become: true  #setting root access specific to this task  
+
+    - name: starting the service
+      ansible.builtin.service:
+        name: nginx
+        state: started
+      
+
+  
