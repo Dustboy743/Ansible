@@ -1,6 +1,6 @@
 ---
 - name: variables
-  hosts: webservers
+  hosts: webserver
   vars:
     PLAY: play1
   tasks:
