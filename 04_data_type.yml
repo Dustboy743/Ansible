@@ -13,7 +13,7 @@
     - terrafom
     CONCEPTS:
       CI: Jenkins
-      SCRIPTING: shell, python, ansible
+      SCRIPTING: "shell, python, ansible"
   tasks:
   - name: printing the data
     ansible.builtin.debug:
