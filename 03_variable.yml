@@ -1,0 +1,17 @@
+---
+- name: variables
+  hosts: webservers
+  vars:
+    PLAY: play1
+  tasks:
+  - name: task1 variables
+    vars:
+      TASK: task1
+    ansible.builtin.debug:
+      msg: "this is for {{ TASK }} and {{ PLAY }}"
+
+  - name: task2
+    ansible.builtin.debug:
+      msg: "this is for {{ TASKS }} and {{PLAY}}"
+    vars:
+      TASKS: task2   
