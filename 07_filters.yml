@@ -4,4 +4,4 @@
   tasks:
   - name: printing user name with default value 
     ansible.builtin.debug:
-      msg: "username is {{ person | default('karthik') }}"
+      msg: "username is {{person | default('karthik') }}"
