@@ -17,6 +17,6 @@
       state: "{{item.state}}"
     become: true  
     loop:
-    - {name: 'nginx', state: present}
+    - {name: 'nginx', state: present}   ##{} important ifnot will get error
     - {name: mysql, state: present}
     - {name: zip, state: absent}    

@@ -1,0 +1,7 @@
+---
+- name: default filters
+  hosts: webserver
+  tasks:
+  - name: printing user name with default value 
+    ansible.builtin.debug:
+      msg: "username is {{person}} | default('karthik')"
