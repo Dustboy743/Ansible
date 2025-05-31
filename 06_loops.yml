@@ -1,0 +1,12 @@
+---
+
+- name: concept is loop
+  hosts: webserver
+  tasks:
+  - name: looping
+    ansible.builtin.debug:
+      msg: "current thing is {{item}}"
+    loop:
+    - Hello
+    - guru
+    - premakosame  
