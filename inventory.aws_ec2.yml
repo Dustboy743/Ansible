@@ -6,5 +6,6 @@ filters:
   instance-state-name : running
 keyed_groups:
   - prefix: "dynamic"  
+    key: frontend
 # hostnames:
 #   - private-ip-address  
