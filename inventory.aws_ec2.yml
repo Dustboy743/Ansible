@@ -5,11 +5,11 @@ filters:
   tag:Name: "frontend"
   instance-state-name : running
 keyed_groups:
-  - prefix: "dynamic"  
-    key: tags.Name
+  - key: tags.Name
+    prefix: "dynamic"  
     value: 
       "frontend"
-hostnames:
-  - private-ip-address  
+# hostnames:
+#   - private-ip-address  
 compose:
   ansible_host: private_ip_address    
