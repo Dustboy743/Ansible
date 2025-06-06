@@ -6,6 +6,6 @@ filters:
   instance-state-name : running
 keyed_groups:
   - prefix: "dynamic"  
-    key: placement.availability_zone
+    key: Name
 # hostnames:
 #   - private-ip-address  
