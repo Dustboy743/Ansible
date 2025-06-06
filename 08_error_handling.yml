@@ -1,0 +1,17 @@
+---
+- name: error handling
+  hosts: local
+  connection: local
+  #become: yes
+  tasks:
+  - name: install mysql
+    ansible.builtin.debug:
+      name: mysql
+      state: latest   ##this will fail as docker is not present in the server
+    register: output  
+    ignore_errors: yes  
+
+  - name: print command
+    ansible.builtin.debug:
+      var: output   ## this will execute as we used error handling concept
+    ## use var: to display the content of output                   
