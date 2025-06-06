@@ -5,8 +5,8 @@ filters:
   tag:Name: "frontend"
   instance-state-name : running
 keyed_groups:
-  - key: tags.Name
-    prefix: "dynamic"  
+  - prefix: "dynamic"  
+    key: tags.Name
     value: 
       "frontend"
 hostnames:
