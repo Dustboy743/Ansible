@@ -4,7 +4,7 @@ regions:
 filters:
   tag:Name: "frontend"
   instance-state-name : running
-# keyed_groups:
-#   - prefix: "dynamic"  
+keyed_groups:
+  - prefix: "dynamic"  
 # hostnames:
 #   - private-ip-address  
