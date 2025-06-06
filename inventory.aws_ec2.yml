@@ -4,10 +4,10 @@ regions:
 filters:
   tag:Name: "frontend"
   instance-state-name : running
-# keyed_groups:
-#   - prefix: "dynamic"  
-#     key: Name
-#     value: 
-#       "frontend"
+keyed_groups:
+  - prefix: "dynamic"  
+    key: tag.Name
+    value: 
+      "frontend"
 hostnames:
   - private-ip-address  
