@@ -7,5 +7,7 @@ filters:
 keyed_groups:
   - prefix: "dynamic"  
     key: Name
+    value: 
+      "frontend"
 # hostnames:
 #   - private-ip-address  
