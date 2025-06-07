@@ -10,7 +10,7 @@ keyed_groups:
     prefix: "dynamic"    ## name of the group
     value: 
       "frontend"    ## give the hosts with the Tags.Name=="frontend"
-# hostnames:
-#   - private-ip-address    ## from that hosts  i need only private ip's
-compose:
-  ansible_host: private_ip_address     ## store the private ip's
+hostnames:
+  - private-ip-address    ## from that hosts  i need only private ip's
+# compose:
+#   ansible_host: private_ip_address     ## store the private ip's
