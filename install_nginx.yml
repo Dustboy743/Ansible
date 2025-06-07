@@ -1,0 +1,9 @@
+---
+- name: install nginx in instances using dynamic inventory
+  host: dynamic_frontend
+  become: yes
+  tasks:
+  - name: nginx
+    ansible.builtin.package:
+     name: nginx
+     state: present

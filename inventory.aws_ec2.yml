@@ -1,15 +1,16 @@
 plugin: amazon.aws.aws_ec2
 regions:
-- us-east-1
-filters:
-  tag:Name: "frontend"
+- us-east-1    ##give hosts from this region
+filters: 
+  tag:Name: "frontend"   ##filter using frontend
   instance-state-name : running
-keyed_groups:
-  - key: tags.Name
-    prefix: "dynamic"  
+##want to create a group for all the hosts with name prefix
+keyed_groups:    
+  - key: tags.Name        ## filter them using Tags Name
+    prefix: "dynamic"    ## name of the group
     value: 
-      "frontend"
-# hostnames:
-#   - private-ip-address  
+      "frontend"    ## give the hosts with the Tags.Name=="frontend"
+hostnames:
+  - private-ip-address    ## from that hosts  i need only private ip's
 compose:
-  ansible_host: private_ip_address    
+  ansible_host: private_ip_address     ## store the private ip's
