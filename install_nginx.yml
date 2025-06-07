@@ -1,6 +1,6 @@
 ---
 - name: install nginx in instances using dynamic inventory
-  host: dynamic_frontend
+  hosts: dynamic_frontend
   become: yes
   tasks:
   - name: nginx
